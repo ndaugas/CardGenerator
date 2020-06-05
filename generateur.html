@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Card Generator</title>
+        <link rel="stylesheet" href="css/generateur.css"/>
+    </head>
+    <body>
+        <div id="chargeCsv">
+            <form>
+                <label for="load-csv">CSV</label>
+                <input id="load-csv" type="file" accept="text/csv">
+            </form>
+        </div>
+
+        <div class="loader hidden">
+        </div>
+
+        <div id="editeur">
+            <div id="all-canvas">
+
+            </div>
+            <div id="navigation-panel">
+                <button id="previous-canvas-btn">Précédent</button>
+                <button id="next-canvas-btn">Suivant</button>
+            </div>
+            <div>
+                <a id="btn-sauvegarde-cartes" download>Exporter</a>
+            </div>
+        </div>
+
+        <script src="js/Stuk-jszip-bead269/dist/jszip.min.js"></script>
+        <script src="js/FileSaver.js-master/dist/FileSaver.min.js"></script>
+        <script src="js/PapaParse-5.0.2/papaparse.min.js"></script>
+        <script src="js/generateur.js"></script>
+    </body>
+</html>
+
+
